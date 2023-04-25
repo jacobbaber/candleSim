@@ -1241,6 +1241,7 @@ GameObject:
   - component: {fileID: 1596275705}
   - component: {fileID: 1596275704}
   - component: {fileID: 1596275707}
+  - component: {fileID: 1596275708}
   m_Layer: 0
   m_Name: FirstPersonPlayer
   m_TagString: Untagged
@@ -1297,6 +1298,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1596275704}
   speed: 12
+--- !u!114 &1596275708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596275703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54685ac85ab32a24fa66e4be55a16227, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1700901405
 GameObject:
   m_ObjectHideFlags: 0

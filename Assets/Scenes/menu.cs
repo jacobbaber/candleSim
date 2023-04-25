@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 // Quits the player when the user hits escape
 
@@ -12,9 +14,10 @@ public class menu : MonoBehaviour
             Application.Quit();
         }
 
-        if(Input.GetKey("enter"))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            Application.LoadLevel(1);
+            Debug.Log("Enter");
+            SceneManager.LoadScene(1);
         }
     }
 }
