@@ -8,15 +8,11 @@ using TMPro;
 
 
 
-public class ButtonExit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonResume : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     private TextMeshProUGUI buttonText;
     // Start is called before the first frame update
-    public void Exit()
-    {
-        Application.Quit();
-    }
 
     void Start(){
         // get the child component of button
@@ -34,3 +30,4 @@ public class ButtonExit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         buttonText.color = Color.white;
     }
 }
+

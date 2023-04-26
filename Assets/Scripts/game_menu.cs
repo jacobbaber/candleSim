@@ -7,11 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class game_menu : MonoBehaviour
 {
+    public 
     void Update()
     {
         if (Input.GetKey("escape"))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }

@@ -6,22 +6,18 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-
-
-public class ButtonExit : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonMainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-
     private TextMeshProUGUI buttonText;
-    // Start is called before the first frame update
-    public void Exit()
-    {
-        Application.Quit();
-    }
 
     void Start(){
         // get the child component of button
         buttonText = GetComponentInChildren<TextMeshProUGUI>();
 
+    }
+    public void MoveToScene(int sceneID)
+    {
+        SceneManager.LoadScene(0);
     }
 
     // change child text color to dark red when mouseover
