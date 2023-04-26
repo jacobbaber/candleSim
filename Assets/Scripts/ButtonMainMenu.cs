@@ -18,6 +18,7 @@ public class ButtonMainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void MoveToScene(int sceneID)
     {
         SceneManager.LoadScene(0);
+        Cursor.visible = true;
     }
 
     // change child text color to dark red when mouseover

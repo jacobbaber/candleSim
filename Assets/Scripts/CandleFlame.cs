@@ -17,6 +17,8 @@ public class CandleFlame : MonoBehaviour
     {
         light = GetComponent<Light>();
         parentObject = transform.parent;
+
+        
     }
 
     void Update()
@@ -28,4 +30,6 @@ public class CandleFlame : MonoBehaviour
         float y = Mathf.PerlinNoise(0f, Time.time * speed) - 0.5f;
         transform.position = lightPos + new Vector3(x * 0.05f, y * 0.05f, 0);
     }
+
+
 }

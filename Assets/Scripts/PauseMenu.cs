@@ -41,5 +41,15 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
    }
 
+   public void mainMenu(){
+        Time.timeScale = 1;
+        AudioListener.pause = false;
+       pauseMenuUI.SetActive(false);
+        Cursor.visible = true;
+        isPaused = false;
+        Cursor.lockState = CursorLockMode.None;
+
+   }
+
 
 }
