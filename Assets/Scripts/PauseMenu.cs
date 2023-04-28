@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField] private bool isPaused;
 
+    [SerializeField] public bool isGameOver;
+
    private void Update(){
          
              
@@ -18,7 +20,10 @@ public class PauseMenu : MonoBehaviour
 
         if(isPaused){
             activateMenu();
-        }else{
+        } else {
+
+          if (!isGameOver)
+          
             deactivateMenu();
         }
    }

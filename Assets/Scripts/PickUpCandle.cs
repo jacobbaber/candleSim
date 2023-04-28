@@ -77,7 +77,7 @@ public class PickUpCandle : MonoBehaviour
 
     }
 
-    private void Drop()
+    public void Drop()
     {
         equipped = false;
         slotFull = false;
